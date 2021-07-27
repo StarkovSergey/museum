@@ -1,0 +1,28 @@
+{
+  "env": {
+    //определяем окружение
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb/base"], //подключаем сборник правил
+  "rules": {
+    //кастомноая настройка - можно изменить правила из сборника и добавить свои
+    "no-console": "off",
+    "no-plusplus": "off",
+    "strict": "off",
+    "max-len": [
+      "error",
+      150,
+      {
+        "ignoreUrls": true
+      }
+    ],
+    "no-alert": "off",
+    "prefer-destructuring": "off",
+    "no-labels": "off",
+    "no-continue": "off",
+    "no-restricted-syntax": "off",
+    "import/extensions": "off"
+  }
+}
