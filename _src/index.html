@@ -22,19 +22,19 @@
           </a>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Visiting</a>
+              <a href="#visiting" class="navigation__link">Visiting</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Explore</a>
+              <a href="#explore" class="navigation__link">Explore</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Video</a>
+              <a href="#video" class="navigation__link">Video</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Tickets</a>
+              <a href="#tickets" class="navigation__link">Tickets</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Contacts</a>
+              <a href="#contacts" class="navigation__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -42,18 +42,22 @@
     </header>
 
     <main class="main">
-      <section class="section welcome">
+      <section class="section welcome" id="welcome">
         <div class="container">
           <div class="welcome__text-box">
-            <h1 class="section__title">Welcome <br />to the Louvre</h1>
-            <p class="section__subtitle">From the castle to the museum</p>
+            <h1 class="section__title section__title--no-underline">
+              Welcome <br />to the Louvre
+            </h1>
+            <p class="welcome__subtitle section__subtitle">
+              From the castle to the museum
+            </p>
             <a class="button" href="#">Discover the Louvre</a>
           </div>
         </div>
       </section>
 
-      <section class="section visiting">
-        <div class="container">
+      <section class="section section--even visiting" id="visiting">
+        <div class="container container--right-shift">
           <h2 class="section__title">Virtual tour</h2>
           <ul class="visiting__list">
             <li class="visiting__item place">
@@ -66,9 +70,9 @@
                   width="440"
                   height="285"
                 />
+                <p class="place__subtitle">360° Virtual Tour</p>
+                <p class="place__text">Google Street Panorama View</p>
               </a>
-              <p class="place__subtitle">360° Virtual Tour</p>
-              <p class="place__text">Google Street Panorama View</p>
             </li>
 
             <li class="visiting__item place">
@@ -81,9 +85,9 @@
                   width="440"
                   height="285"
                 />
+                <p class="place__subtitle">360° Virtual Tour</p>
+                <p class="place__text">Google Street Panorama View</p>
               </a>
-              <p class="place__subtitle">360° Virtual Tour</p>
-              <p class="place__text">Google Street Panorama View</p>
             </li>
 
             <li class="visiting__item place">
@@ -96,9 +100,9 @@
                   width="440"
                   height="285"
                 />
+                <p class="place__subtitle">360° Virtual Tour</p>
+                <p class="place__text">Google Street Panorama View</p>
               </a>
-              <p class="place__subtitle">360° Virtual Tour</p>
-              <p class="place__text">Google Street Panorama View</p>
             </li>
 
             <li class="visiting__item place">
@@ -111,9 +115,9 @@
                   width="440"
                   height="285"
                 />
+                <p class="place__subtitle">360° Virtual Tour</p>
+                <p class="place__text">Google Street Panorama View</p>
               </a>
-              <p class="place__subtitle">360° Virtual Tour</p>
-              <p class="place__text">Google Street Panorama View</p>
             </li>
 
             <li class="visiting__item place">
@@ -126,9 +130,9 @@
                   width="440"
                   height="285"
                 />
+                <p class="place__subtitle">360° Virtual Tour</p>
+                <p class="place__text">Google Street Panorama View</p>
               </a>
-              <p class="place__subtitle">360° Virtual Tour</p>
-              <p class="place__text">Google Street Panorama View</p>
             </li>
 
             <li class="visiting__item place">
@@ -141,54 +145,66 @@
                   width="440"
                   height="285"
                 />
+                <p class="place__subtitle">360° Virtual Tour</p>
+                <p class="place__text">Google Street Panorama View</p>
               </a>
-              <p class="place__subtitle">360° Virtual Tour</p>
-              <p class="place__text">Google Street Panorama View</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="section explore">
+      <section class="section explore" id="explore">
         <div class="container">
-          <div class="explore__text-box">
-            <h2 class="section__title">Picture explore</h2>
-            <p class="section__text">
-              Las Meninas is a 1656 painting by Diego Velázquez, the leading
-              artist of the Spanish Golden Age.
-            </p>
-            <p class="section__text">
-              It was cleaned in 1984 to remove a
-              <span class="section__text--special">"yellow veil"</span> of dust
-              that had gathered since the previous restoration in the 19th
-              century.
-            </p>
-            <p class="section__text">
-              The cleaning provoked furious protests, not because the picture
-              had been damaged in any way, but because it looked different.
-            </p>
-          </div>
+          <div class="explore__row">
+            <div class="explore__text-box">
+              <h2 class="section__title">Picture explore</h2>
+              <p class="section__text">
+                Las Meninas is a 1656 painting by Diego Velázquez, the leading
+                artist of the Spanish Golden Age.
+              </p>
+              <p class="section__text">
+                It was cleaned in 1984 to remove a
+                <span class="section__text--special">"yellow veil"</span> of
+                dust that had gathered since the previous restoration in the
+                19th century.
+              </p>
+              <p class="section__text">
+                The cleaning provoked furious protests, not because the picture
+                had been damaged in any way, but because it looked different.
+              </p>
+            </div>
 
-          <div class="explore__image">
-            <img src="img/explore/explore-picture.jpg" alt="" />
+            <div class="explore__image">
+              <img src="img/explore/explore-picture.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section video">
-        <div class="container">
-          <div class="video__text-column">
-            <h2 class="section__title">Video journey</h2>
-            <p class="section__text">
+      <section class="section section--even video" id="video">
+        <div class="video__container container">
+          <div class="video__text-row">
+            <h2 class="video__title  section__title section__title--no-underline">
+              Video journey
+            </h2>
+            <p class="video__text section__text">
               Enter and visit one of the most famous museums in the world and
               enjoy masterpieces such as Mona Lisa or Hammurabi's Code
             </p>
           </div>
 
-          <div class="player">
-            <button class="player__central-button">
-              <span class="visually-hidden">Play</span>
-            </button>
+          <div class="video__player player">
+            <div class="player__screen">
+              <img
+                src="img/video/video-image.jpg"
+                alt="temporary video image"
+                width="1440"
+                height="629"
+              />
+              <button class="player__central-button">
+                <span class="visually-hidden">Play</span>
+              </button>
+            </div>
 
             <div class="player__control-box">
               <button class="player__button player__button--back">
@@ -201,16 +217,12 @@
                 <span class="visually-hidden">Next</span>
               </button>
 
-              <div class="player__progress">
-                <input class="" type="range" />
-              </div>
+              <input class="player__range  player__range--progress" type="range" min="0" max="100" value="45" step="1"/>
 
-              <div class="player__volume">
                 <button class="player__button player__button--volume">
                   <span class="visually-hidden">Mute</span>
                 </button>
-                <input type="range" />
-              </div>
+                <input type="range" class="player__range  player__range--volume" />
 
               <button class="player__button player__button--full">
                 <span class="visually-hidden">Full screen</span>
@@ -220,7 +232,7 @@
         </div>
       </section>
 
-      <section class="section tickets">
+      <section class="section tickets" id="tickets">
         <div class="container">
           <h2 class="section__title">Buy tickets</h2>
           <div class="tickets__image">
@@ -275,40 +287,46 @@
         </div>
       </section>
 
-      <section class="section contacts">
+      <section class="section section--even contacts" id="contacts">
         <div class="container">
           <h2 class="section__title">Contacts</h2>
-          <div class="contacts__text-box">
-            <b>Palais Royal <br />Musee du Louvre</b>
-            <address>
-              <ul>
-                <li>address: 75001 Paris, France</li>
-                <li>
-                  <a href="tel:+33(0)140205050">phone: +33(0) 1 40 20 50 50</a>
-                </li>
-                <li>
-                  <a href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
-                </li>
-              </ul>
-            </address>
-          </div>
+          <div class="contacts__row">
+            <div class="contacts__text-box">
+              <b class="contacts__header">Palais Royal <br />Musee du Louvre</b>
+              <address class="contacts__address">
+                <ul class="contacts__list">
+                  <li class="contacts__item">address: 75001 Paris, France</li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+33(0)140205050"
+                      >phone: +33(0) 1 40 20 50 50</a
+                    >
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@louvre.fr"
+                      >mail: info@louvre.fr</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
 
-          <div class="contacts__map">
-            <img
-              src="img/contacts/map.png"
-              alt="map that shows the location of Louvre"
-              width="960"
-              height="620"
-            />
+            <div class="contacts__map">
+              <img
+                src="img/contacts/map.png"
+                alt="map that shows the location of Louvre"
+                width="960"
+                height="620"
+              />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <nav class="footer__navigation navigation">
-          <a class="logo" href="#">
+      <div class="footer__container container">
+        <nav class="footer__navigation">
+          <a class="footer__logo logo" href="#">
             <img
               class="logo__image"
               src="img/logo/Logo.svg"
@@ -318,24 +336,24 @@
             />
           </a>
 
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Welcome</a>
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+              <a href="#welcome" class="footer__navigation-link">Welcome</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Visiting</a>
+            <li class="footer__navigation-item">
+              <a href="#visiting" class="footer__navigation-link">Visiting</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Explore</a>
+            <li class="footer__navigation-item">
+              <a href="#explore" class="footer__navigation-link">Explore</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Video</a>
+            <li class="footer__navigation-item">
+              <a href="#video" class="footer__navigation-link">Video</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Tickets</a>
+            <li class="footer__navigation-item">
+              <a href="#tickets" class="footer__navigation-link">Tickets</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Contacts</a>
+            <li class="nfooter__navigation-item">
+              <a href="#contacts" class="footer__navigation-link">Contacts</a>
             </li>
           </ul>
         </nav>

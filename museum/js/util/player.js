@@ -1,0 +1,1 @@
+const progress=document.querySelectorAll(".player__range");for(let r=0;r<progress.length;r++)progress[r].addEventListener("input",(function(){const r=this.value;this.style.background=`linear-gradient(to right, var(--basic-blue) 0%,\n    var(--basic-blue) ${r}%, var(--light-gray) ${r}%, var(--light-gray) 100%)`}));

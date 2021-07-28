@@ -1,0 +1,15 @@
+.visiting {
+}
+
+.visiting__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 78px;
+  margin: 0;
+  padding: 0;
+  column-gap: 60px;
+  list-style: none;
+}
+
+.visiting__item {
+}

@@ -32,6 +32,7 @@ button {
 
 .page {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -39,12 +40,12 @@ button {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  color: #201d1b;
+  color: var(--basic-white);
   font-weight: 300;
   font-size: 22px;
   font-family: "Roboto";
   line-height: 1;
-  background-color: var(--color-white);
+  background-color: var(--bg-dark);
 }
 
 img {
@@ -52,13 +53,6 @@ img {
   height: auto;
   vertical-align: top;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 
 /* ------------------------------------*|
   #global classes
@@ -68,4 +62,27 @@ ul {
   max-width: 1470px;
   margin: 0 auto;
   padding: 0 15px;
+
+  &--right-shift {
+    margin: 0;
+    margin-left: calc(50% - 682px);
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 70px;
+  border-radius: 10px;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: var(--special-red);
+
+  &:hover,
+  &:focus {
+    background-color: var(--special-gold);
+    transition: background-color 200ms ease 0s;
+  }
 }

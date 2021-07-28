@@ -1,0 +1,16 @@
+.logo {
+  display: block;
+  display: flex;
+  flex-shrink: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition: opacity 200ms ease 0s;
+  }
+}
+
+.logo__image {
+  margin-top: auto;
+  margin-bottom: auto;
+}

@@ -1,0 +1,42 @@
+.contacts__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__text-box {
+}
+
+.contacts__header {
+  display: block;
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.contacts__address {
+  font-weight: 300;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 26px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+}
+
+.contacts__link {
+  &:hover,
+  &:focus {
+    color: var(--special-gold);
+  }
+}
+
+.contacts__map {
+}

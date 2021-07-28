@@ -1,0 +1,34 @@
+.navigation {
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__item + .navigation__item {
+  margin-left: 65px;
+}
+
+.navigation__link {
+  display: block;
+  padding: 5px;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+
+  &:hover,
+  &:focus {
+    color: var(--special-gold);
+    transition: color 200ms ease 0s;
+  }
+}
+
+.navigation__item:last-child .navigation__link {
+  padding-right: 0;
+}
