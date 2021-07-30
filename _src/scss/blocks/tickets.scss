@@ -1,0 +1,64 @@
+.tickets {
+}
+
+.tickets__row {
+  display: grid;
+  grid-template-columns: 720px 660px;
+  column-gap: 60px;
+}
+
+.tickets__image {
+}
+
+.tickets__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.tickets__legend {
+  padding: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.tickets__amount {
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.tickets__total {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+  text-align: right;
+}
+
+.tickets__button {
+  display: inline-block;
+  align-items: center;
+  padding: 12px 40px;
+  border-radius: 2px;
+  color: var(--basic-black);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: var(--basic-white);
+  cursor: pointer;
+  transition: background-color 200ms ease 0s;
+
+  &:hover,
+  &:focus {
+    background-color: var(--special-gold);
+  }
+}

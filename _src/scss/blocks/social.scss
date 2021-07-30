@@ -18,12 +18,12 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-color 200ms ease 0s;
 
   &:hover,
   &:focus {
     border-color: var(--special-gold);
     background-color: var(--special-gold);
-    transition: background-color 200ms ease 0s;
   }
 }
 

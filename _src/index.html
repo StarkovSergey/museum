@@ -184,7 +184,9 @@
       <section class="section section--even video" id="video">
         <div class="video__container container">
           <div class="video__text-row">
-            <h2 class="video__title  section__title section__title--no-underline">
+            <h2
+              class="video__title section__title section__title--no-underline"
+            >
               Video journey
             </h2>
             <p class="video__text section__text">
@@ -201,30 +203,40 @@
                 width="1440"
                 height="629"
               />
-              <button class="player__central-button">
+              <button class="player__central-button" type="button">
                 <span class="visually-hidden">Play</span>
               </button>
             </div>
 
             <div class="player__control-box">
-              <button class="player__button player__button--back">
+              <button class="player__button player__button--back" type="button">
                 <span class="visually-hidden">Back</span>
               </button>
-              <button class="player__button player__button--play">
+              <button class="player__button player__button--play" type="button">
                 <span class="visually-hidden">Play</span>
               </button>
-              <button class="player__button player__button--next">
+              <button class="player__button player__button--next" type="button">
                 <span class="visually-hidden">Next</span>
               </button>
 
-              <input class="player__range  player__range--progress" type="range" min="0" max="100" value="45" step="1"/>
+              <input
+                class="player__range player__range--progress"
+                type="range"
+                min="0"
+                max="100"
+                value="45"
+                step="1"
+              />
 
-                <button class="player__button player__button--volume">
-                  <span class="visually-hidden">Mute</span>
-                </button>
-                <input type="range" class="player__range  player__range--volume" />
+              <button
+                class="player__button player__button--volume"
+                type="button"
+              >
+                <span class="visually-hidden">Mute</span>
+              </button>
+              <input type="range" class="player__range player__range--volume" />
 
-              <button class="player__button player__button--full">
+              <button class="player__button player__button--full" type="button">
                 <span class="visually-hidden">Full screen</span>
               </button>
             </div>
@@ -235,55 +247,130 @@
       <section class="section tickets" id="tickets">
         <div class="container">
           <h2 class="section__title">Buy tickets</h2>
-          <div class="tickets__image">
-            <img src="img/tickets/tickets-picture.jpg" alt="" />
+          <div class="tickets__row">
+            <div class="tickets__image">
+              <img src="img/tickets/tickets-picture.jpg" alt="" />
+            </div>
+
+            <form
+              class="tickets__form"
+              action="http://echo.htmlacademy.ru"
+              method="post"
+            >
+              <fieldset class="tickets__column tickets__fieldset ticket-type">
+                <legend class="tickets__legend ticket-type__title">
+                  Ticket Type
+                </legend>
+                <ul class="ticket-type__list">
+                  <li class="ticket-type__option">
+                    <input
+                      class="visually-hidden ticket-type__input-radio"
+                      type="radio"
+                      name="ticket-type"
+                      id="permanent-ticket"
+                      value="permanent"
+                    />
+                    <label class="ticket-type__label" for="permanent-ticket"
+                      >Permanent exhibition</label
+                    >
+                  </li>
+                  <li class="ticket-type__option">
+                    <input
+                      class="visually-hidden ticket-type__input-radio"
+                      type="radio"
+                      name="ticket-type"
+                      id="temporary-ticket"
+                      value="temporary"
+                    />
+                    <label class="ticket-type__label" for="temporary-ticket"
+                      >Temporary exhibition</label
+                    >
+                  </li>
+                  <li class="ticket-type__option">
+                    <input
+                      class="visually-hidden ticket-type__input-radio"
+                      type="radio"
+                      name="ticket-type"
+                      id="combined-ticket"
+                      value="combined"
+                    />
+                    <label class="ticket-type__label" for="combined-ticket"
+                      >Combined Admission</label
+                    >
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="tickets__column">
+                <fieldset class="tickets__fieldset tickets__amount amount">
+                  <legend class="tickets__legend amount__title">Amount</legend>
+
+                  <div class="amount__item">
+                    <label class="amount__label" for="basic">Basic 18+</label>
+                    <div class="amount-box">
+                      <button
+                        class="amount__button amount__button--minus"
+                        type="button"
+                        onclick="this.nextElementSibling.stepDown()"
+                      >
+                        –
+                      </button>
+                      <input
+                        class="amount__input"
+                        type="number"
+                        readonly
+                        min="0"
+                        max="100"
+                        name="basic"
+                        id="basic"
+                        value="1"
+                      />
+                      <button
+                        class="amount__button amount__button--plus"
+                        type="button"
+                        onclick="this.previousElementSibling.stepUp()"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="amount__item">
+                    <label class="amount__label" for="senior">Senior 65+</label>
+                    <div class="amount-box">
+                      <button
+                        class="amount__button amount__button--minus"
+                        type="button"
+                        onclick="this.nextElementSibling.stepDown()"
+                      >
+                        –
+                      </button>
+                      <input
+                        class="amount__input"
+                        type="number"
+                        readonly
+                        min="0"
+                        max="100"
+                        name="senior"
+                        id="senior"
+                        value="1"
+                      />
+                      <button
+                        class="amount__button amount__button--plus"
+                        type="button"
+                        onclick="this.previousElementSibling.stepUp()"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <b class="tickets__total">Total € <span>220</span></b>
+                <button class="tickets__button" type="submit">Buy Now</button>
+              </div>
+            </form>
           </div>
-
-          <form
-            class="tickets__form"
-            action="http://echo.htmlacademy.ru"
-            method="post"
-          >
-            <fieldset class="tickets__type-box filter">
-              <legend class="filter__title">Ticket Type</legend>
-              <ul>
-                <li class="filter__option">
-                  <input
-                    class="visually-hidden filter__input-radio"
-                    type="radio"
-                    name="ticket-type"
-                    id="permanent-ticket"
-                    value="permanent"
-                  />
-                  <label for="permanent-ticket">Permanent exhibition</label>
-                </li>
-                <li class="filter__option">
-                  <input
-                    class="visually-hidden filter__input-radio"
-                    type="radio"
-                    name="ticket-type"
-                    id="temporary-ticket"
-                    value="temporary"
-                  />
-                  <label for="temporary-ticket">Temporary exhibition</label>
-                </li>
-                <li class="filter__option">
-                  <input
-                    class="visually-hidden filter__input-radio"
-                    type="radio"
-                    name="ticket-type"
-                    id="combined-ticket"
-                    value="combined"
-                  />
-                  <label for="combined-ticket">Combined Admission</label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="tickets__amount-box amount">
-              <legend class="amount__title">Amount</legend>
-            </fieldset>
-          </form>
         </div>
       </section>
 

@@ -15,11 +15,11 @@
   background-image: url("../../img/video/central-button.svg");
   cursor: pointer;
   transform: translate(-50%, -50%);
+  transition: opacity 200ms ease 0s;
 
   &:hover,
   &:focus {
     opacity: 0.6;
-    transition: opacity 200ms ease 0s;
   }
 }
 
@@ -34,11 +34,11 @@
 .player__button {
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: opacity 200ms ease 0s;
 
   &:hover,
   &:focus {
     opacity: 0.6;
-    transition: opacity 200ms ease 0s;
   }
 }
 

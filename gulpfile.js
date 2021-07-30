@@ -48,7 +48,9 @@ const styles = () => gulp.src('_src/scss/style.scss')
 
 const html = () => gulp.src(['_src/*.html', '!' + '_src' + '/_*.html'])
   .pipe(fileinclude())
-  .pipe(typograf({ locale: ['en-US'] }))
+  // .pipe(typograf({
+  //   locale: ['en-US'],
+  // }))
   .pipe(htmlmin({
     removeComments: true,
     collapseWhitespace: true,

@@ -1,0 +1,61 @@
+.ticket-type {
+}
+
+.ticket-type__title {
+  margin-bottom: 50px;
+}
+
+.ticket-type__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ticket-type__option {
+  margin-bottom: 40px;
+}
+
+.ticket-type__input-radio:hover + .ticket-type__label,
+.ticket-type__input-radio:focus + .ticket-type__label {
+  color: var(--special-gold);
+}
+
+.ticket-type__input-radio + .ticket-type__label {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  cursor: pointer;
+  transition: color 200ms ease 0s;
+
+  &::before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--basic-white);
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.ticket-type__input-radio:checked + .ticket-type__label::after {
+  transform: scale(1);
+}
+
+.ticket-type__label::after {
+  position: absolute;
+  top: 14px;
+  left: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  transform: scale(0);
+  transition: transform 200ms ease 0s;
+  content: "";
+}

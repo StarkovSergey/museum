@@ -36,8 +36,6 @@ button {
 }
 
 .page__body {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   margin: 0;
   color: var(--basic-white);
@@ -79,10 +77,10 @@ img {
   letter-spacing: 2px;
   text-align: center;
   background-color: var(--special-red);
+  transition: background-color 200ms ease 0s;
 
   &:hover,
   &:focus {
     background-color: var(--special-gold);
-    transition: background-color 200ms ease 0s;
   }
 }
