@@ -1,10 +1,12 @@
 .visiting {
+  padding-top: 59px;
+  padding-bottom: 90px;
 }
 
 .visiting__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 78px;
+  row-gap: 75px;
   margin: 0;
   padding: 0;
   column-gap: 60px;

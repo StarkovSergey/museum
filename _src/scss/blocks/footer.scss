@@ -19,7 +19,9 @@
 
 .footer__navigation-list {
   display: grid;
+  grid-template-rows: repeat(3, auto);
   grid-template-columns: 260px 260px;
+  grid-auto-flow: column;
   margin: 0;
   padding: 0;
   list-style: none;
